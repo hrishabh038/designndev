@@ -1,0 +1,5 @@
+export {default as LogoSVG} from "./logo.svg"
+export {default as Project1} from "./project1.svg"
+export {default as Project2} from "./project2.svg"
+export {default as Project3} from "./project3.svg"
+export {default as Project4} from "./project4.svg"
