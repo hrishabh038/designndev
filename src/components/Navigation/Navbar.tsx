@@ -53,24 +53,32 @@ const Navbar = (props: Props) => {
     };
   }, []);
   return (
-    <nav className={twMerge("fixed top-0 left-0 right-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 z-[999999] duration-500 bg-transparent shadow-none", headerClass)}>
+    <nav
+      className={twMerge(
+        "fixed top-0 left-0 right-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 z-[999999] duration-500 bg-transparent shadow-none",
+        headerClass
+      )}
+    >
       <div
         className={twMerge(
           "w-full h-[70px] border-b border-white/5 flex items-center justify-between",
           props.className
         )}
       >
-        <div className="flex items-center sm:gap-8 md:gap-10 lg:gap-20">
-          <Logo className="w-[120px]" />
-          <ul className="hidden sm:flex items-center sm:gap-4 md:gap-5 lg:gap-10">
-            {routes.map((route) => (
-              <li key={route.title}>
-                <NavButton title={route.title} href={route.href} />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <Button text="Start a project" href="/contact" icon />
+        <Logo className="w-[120px]" />
+        <ul className="hidden sm:flex items-center sm:gap-4 md:gap-5 lg:gap-10">
+          {routes.map((route) => (
+            <li key={route.title}>
+              <NavButton title={route.title} href={route.href} />
+            </li>
+          ))}
+        </ul>
+        <Button
+          hideNshow="hidden sm:flex"
+          text="Start a project"
+          href="/contact"
+          icon
+        />
         <div className="p-1 bg-white/20 rounded-full cursor-pointer sm:hidden">
           <div className="bg-white/30 p-1 rounded-full">
             <div className="w-[20px] h-[20px] bg-white rounded-full"></div>
@@ -94,7 +102,7 @@ const NavButton = (props: NavButtonProps) => {
       <button
         className={twMerge(
           " text-neutral-300 flex items-center",
-          !isActive && "hover:scale-110 hover:text-white text-sm"
+          !isActive && "hover:scale-110 hover:text-white text-[15px]"
         )}
       >
         {isActive && (
