@@ -30,7 +30,7 @@ const Banner = (props: Props) => {
             icon
           />
         </div>
-        <div className="h-[300px] w-full md:w-[700px] bg-white/15 rounded-xl -mb-[275px]"></div>
+        <div className="h-[300px] w-full md:w-[700px] bg-white/25 rounded-xl -mb-[275px]"></div>
       </div>
       <TsParticlesBanner />
     </div>
