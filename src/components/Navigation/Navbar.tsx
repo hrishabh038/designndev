@@ -36,7 +36,7 @@ const Navbar = (props: Props) => {
   const handleScroll = () => {
     const newScrollPosition = window.scrollY;
 
-    if (newScrollPosition > 225) {
+    if (newScrollPosition > 20) {
       setHeaderClass("bg-[#121212] shadow-2xl");
     } else {
       setHeaderClass("bg-transparent shadow-none");
@@ -55,7 +55,7 @@ const Navbar = (props: Props) => {
   return (
     <nav
       className={twMerge(
-        "fixed top-0 left-0 right-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 z-[999999] duration-500 bg-transparent shadow-none",
+        "fixed top-0 left-0 right-0 global-padding z-[999999] duration-500 bg-transparent shadow-none",
         headerClass
       )}
     >

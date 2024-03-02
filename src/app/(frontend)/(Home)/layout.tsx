@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/components";
+import { Footer, Navbar } from "@/components/components";
 import React from "react";
 
 type Props = { children: React.ReactNode };
@@ -8,6 +8,7 @@ const layout = (props: Props) => {
     <main>
       <Navbar className="h-[70px]" />
       {props.children}
+      <Footer />
     </main>
   );
 };

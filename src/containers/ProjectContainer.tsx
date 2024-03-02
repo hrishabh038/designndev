@@ -12,7 +12,7 @@ type Props = {
 
 const ProjectContainer = (props: Props) => {
   return (
-    <div className={twMerge("bg-slate-600 p-6 lg:p-8 rounded-2xl flex flex-col lg:flex-row gap-4", props.bgColor)}>
+    <div className={twMerge("bg-slate-600 p-4 lg:p-8 rounded-2xl flex flex-col lg:flex-row gap-4", props.bgColor)}>
       <div className="w-full">
         <div className="relative w-[100px] h-[40px] mb-[40px]">
           <Image src={props.logo} alt={props.logo} fill />

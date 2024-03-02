@@ -5,7 +5,7 @@ type Props = {};
 
 const Banner = (props: Props) => {
   return (
-    <div className="banner relative h-screen w-full flex flex-col items-center justify-center pt-[70px] global-padding overflow-hidden">
+    <div className="-z-10 banner relative h-screen w-full flex flex-col items-center justify-center pt-[70px] global-padding overflow-hidden">
       <div className="w-full flex flex-col items-center justify-between gap-8 z-[9999]">
         <div className="flex flex-col items-center justify-center gap-8 ">
           <p className="text-center rounded-full py-1 px-2 border border-neutral-600 text-xs text-neutral-400">
@@ -24,13 +24,13 @@ const Banner = (props: Props) => {
             </p>
           </div>
           <Button
-            className="bg-blue-500 text-white hover:bg-blue-400"
+            className="bg-blue-500 text-white hover:bg-blue-400 text-base py-3 px-6"
             text="Start a project"
             href="/contact"
             icon
           />
         </div>
-        <div className="h-[300px] w-full md:w-[700px] bg-white/25 rounded-xl -mb-[275px]"></div>
+        <div className="relative z-10 h-[300px] w-full md:w-[700px] bg-white/25 rounded-2xl -mb-[275px]"></div>
       </div>
       <TsParticlesBanner />
     </div>
