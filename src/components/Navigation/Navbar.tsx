@@ -55,7 +55,7 @@ const Navbar = (props: Props) => {
   return (
     <nav
       className={twMerge(
-        "fixed top-0 left-0 right-0 global-padding z-[999999] duration-500 bg-transparent shadow-none",
+        "fixed top-0 left-0 right-0 global-padding z-[999999] duration-150 bg-transparent shadow-none bg-[#121212]",
         headerClass
       )}
     >

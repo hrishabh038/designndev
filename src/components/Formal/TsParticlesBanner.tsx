@@ -43,10 +43,10 @@ const TSParticlesBanner = () => {
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: '#4D4D4D',
           },
           links: {
-            color: '#ffffff',
+            color: '#4D4D4D',
             distance: 150,
             enable: true,
             opacity: 0.5,
