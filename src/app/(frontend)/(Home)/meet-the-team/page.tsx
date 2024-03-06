@@ -5,11 +5,11 @@ import { ProjectContainer } from "@/containers/containers";
 
 type Props = {};
 
-const About = (props: Props) => {
+const MeetTheTeam = (props: Props) => {
   return (
     <section className="flex flex-col">
       <PageBanner
-        title="About"
+        title="Meet The Team"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
         odit sed iusto provident maiores neque dolores? Eos corporis debitis
         totam suscipit, itaque eaque ducimus, iste quaerat eligendi rem ipsam
@@ -22,4 +22,4 @@ const About = (props: Props) => {
   );
 };
 
-export default About;
+export default MeetTheTeam;
