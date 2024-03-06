@@ -13,13 +13,13 @@ const Banner = (props: Props) => {
           </p>
           <div className="flex flex-col gap-5  w-full md:w-[700px]">
             <div
-              className="text-2xl sm:text-3xl md:text-4xl font-semibold "
+              className="text-2xl sm:text-3xl md:text-4xl font-semibold  text-justify"
               // style={{ lineHeight: "normal" }}
             >
               Turn ideas into digital wonders with our top-notch web and app
               services!
             </div>
-            <p className=" text-neutral-400 text-sm">
+            <p className=" text-neutral-400 text-sm  text-justify">
               Unlock the full potential of your business with our expert web and
               app development solutions. We specialize in creating stunning,
               user-friendly websites and powerful, intuitive applications that
