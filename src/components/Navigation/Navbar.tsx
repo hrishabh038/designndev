@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { Button, Logo } from "../components";
 import { usePathname } from "next/navigation";
 import { TbArrowLoopRight } from "react-icons/tb";
+import Link from "next/link";
 
 const navRoutes = [
   {
@@ -31,15 +32,15 @@ type Props = {
 const Navbar = (props: Props) => {
   const routes = navRoutes;
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [headerClass, setHeaderClass] = useState("bg-transparent shadow-none");
+  const [headerClass, setHeaderClass] = useState("shadow-none");
 
   const handleScroll = () => {
     const newScrollPosition = window.scrollY;
 
     if (newScrollPosition > 20) {
-      setHeaderClass("bg-[#121212] shadow-2xl");
+      setHeaderClass("shadow-2xl");
     } else {
-      setHeaderClass("bg-transparent shadow-none");
+      setHeaderClass("shadow-none");
     }
 
     setScrollPosition(newScrollPosition);
@@ -55,13 +56,13 @@ const Navbar = (props: Props) => {
   return (
     <nav
       className={twMerge(
-        "fixed top-0 left-0 right-0 global-padding z-[999999] duration-150 bg-transparent shadow-none bg-[#121212]",
+        "fixed top-0 left-0 right-0 z-[999999] duration-150 shadow-none bg-[#121212]",
         headerClass
       )}
     >
       <div
         className={twMerge(
-          "w-full h-[70px] border-b border-white/5 flex items-center justify-between",
+          "  w-full 2xl:max-w-[1500px] m-auto h-[70px] border-b border-white/5 flex items-center justify-between global-padding",
           props.className
         )}
       >
@@ -98,7 +99,7 @@ const NavButton = (props: NavButtonProps) => {
   const pathname = usePathname();
   const isActive = pathname === props.href;
   return (
-    <a href={props.href}>
+    <Link href={props.href}>
       <button
         className={twMerge(
           " text-neutral-300 flex items-center",
@@ -110,7 +111,7 @@ const NavButton = (props: NavButtonProps) => {
         )}
         <span>{props.title}</span>
       </button>
-    </a>
+    </Link>
   );
 };
 

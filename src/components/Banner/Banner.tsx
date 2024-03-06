@@ -13,13 +13,13 @@ const Banner = (props: Props) => {
           </p>
           <div className="flex flex-col gap-5  w-full md:w-[700px]">
             <div
-              className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center"
-              style={{ lineHeight: "normal" }}
+              className="text-2xl sm:text-3xl md:text-4xl font-semibold "
+              // style={{ lineHeight: "normal" }}
             >
               Turn ideas into digital wonders with our top-notch web and app
               services!
             </div>
-            <p className="text-center text-neutral-400 text-sm">
+            <p className=" text-neutral-400 text-sm">
               Unlock the full potential of your business with our expert web and
               app development solutions. We specialize in creating stunning,
               user-friendly websites and powerful, intuitive applications that
@@ -33,7 +33,7 @@ const Banner = (props: Props) => {
             icon
           />
         </div>
-        <div className="h-[300px] w-full md:w-[700px] bg-white/25 rounded-2xl -mb-[275px]"></div>
+        <div className="h-[300px] w-full md:w-[700px] bg-white/25 -mb-[275px]"></div>
       </div>
       <TsParticlesBanner />
     </div>
