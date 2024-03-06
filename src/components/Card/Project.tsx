@@ -25,7 +25,7 @@ const ProjectContainer = (props: Props) => {
       <div className="w-full flex flex-col gap-8">
         <div className="aspect-[4/2.7] w-full bg-white/25 hidden lg:block"></div>
         <div className="lg:pl-8 flex flex-col gap-4 lg:gap-8">
-          <p className=" text-lg">{props.text}</p>
+          <p className=" text-lg  text-justify">{props.text}</p>
           <Button text={props.btnText} className="py-3 px-6 text-base" icon />
         </div>
       </div>
